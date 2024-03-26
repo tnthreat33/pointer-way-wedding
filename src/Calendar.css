@@ -1,0 +1,22 @@
+.calendar-container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .react-calendar {
+    max-width: 100%;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .react-calendar__tile--active {
+    background: #007bff;
+    color: #fff;
+  }
+  
+  .available-date {
+    background: #b9e9b9 !important;
+  }
+  
