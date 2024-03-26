@@ -1,7 +1,9 @@
 import Navbar from './NavBar';
+import MyCalendar from './Calendar';
 
 function App() {
   const imageUrl = 'https://i.pinimg.com/originals/0d/d5/58/0dd558b702946287f8e5e49686f81b0b.jpg';
+  const availableDates = ['2024-03-01', '2024-03-05', '2024-03-10'];
 
   return (
     <div className="bg-cream-tan min-h-screen">
@@ -11,7 +13,8 @@ function App() {
 
       <p1> insert photo gallery</p1>
 
-      <p1> insert calendar with available dates</p1>
+      <h1>Available Dates Calendar</h1>
+      <MyCalendar availableDates={availableDates} />
 
       <p1> this will be a form to submit request</p1>
 
