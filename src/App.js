@@ -1,6 +1,7 @@
 import Navbar from './NavBar';
 import About from './About';
 import MyCalendar from './Calendar';
+import Contact from './Contact';
 
 function App() {
   const imageUrl = 'https://i.pinimg.com/originals/0d/d5/58/0dd558b702946287f8e5e49686f81b0b.jpg';
@@ -17,7 +18,7 @@ function App() {
       <h1>Available Dates Calendar</h1>
       <MyCalendar availableDates={availableDates} />
 
-      <p1> this will be a form to submit request</p1>
+      <Contact/>
 
       <p1> bottom bar with contact details and social links</p1>
     </div>
