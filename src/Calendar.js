@@ -11,10 +11,12 @@ const MyCalendar = ({ availableDates }) => {
   };
 
   return (
-    <div className="max-w-xs mx-auto flex flex-col items-start"> {/* Flex container with items-start */}
+    <div > {/* Flex container with items-start */}
+      <div className="bg-amber-600 rounded max-w-xs mx-auto flex flex-col items-start">
       <h1 className="text-lg font-bold mb-2">Available Dates Calendar</h1>
       <h4 className="text-sm mb-2">Find Your Perfect Date</h4>
       <p className="text-sm mb-4">If you don't see the date you want, reach out to us below to request other available dates.</p>
+      </div>
       <div>
       <Calendar
         onChange={setDate}
