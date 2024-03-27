@@ -1,3 +1,5 @@
+// App.js
+import React from 'react';
 import Navbar from './NavBar';
 import About from './About';
 import MyCalendar from './Calendar';
@@ -12,13 +14,18 @@ function App() {
     <div className="bg-cream-tan min-h-screen">
       <Navbar />
       <img src={imageUrl} alt="Main Wedding Image" className="w-full" />
-      <About/>
-      <PhotoGallery/>
-      
-      <MyCalendar availableDates={availableDates} />
-
-      <Contact/>
-
+      <div id="about">
+        <About/>
+      </div>
+      <div id="gallery">
+        <PhotoGallery/>
+      </div>
+      <div id="calendar">
+        <MyCalendar availableDates={availableDates} />
+      </div>
+      <div id="contact">
+        <Contact/>
+      </div>
       <p1> bottom bar with contact details and social links</p1>
     </div>
   );
