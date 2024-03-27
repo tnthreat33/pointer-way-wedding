@@ -11,9 +11,14 @@ function App() {
   const availableDates = ['2024-03-30', '2024-03-31', '2024-04-10'];
 
   return (
-    <div className="bg-slate-700 min-h-screen">
+    <div className="bg-slate-700 min-h-screen relative">
       <Navbar />
-      <img src={imageUrl} alt="Main Wedding Image" className="w-full" />
+      <div className="relative w-full overflow-hidden">
+        <img src={imageUrl} alt="Main Wedding Image" className="w-full object-cover" style={{height: "650px"}} />
+        <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-slate-700 text-8xl "> {/* Position text in the middle */}
+          Pointers Way
+        </div>
+      </div>
       <div id="about">
         <About/>
       </div>
