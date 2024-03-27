@@ -12,6 +12,7 @@ const MyCalendar = ({ availableDates }) => {
 
   return (
     <div className="max-w-xs mx-auto">
+      <h1>Available Dates Calendar</h1>
       <Calendar
         onChange={setDate}
         value={date}

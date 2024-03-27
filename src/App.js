@@ -2,6 +2,7 @@ import Navbar from './NavBar';
 import About from './About';
 import MyCalendar from './Calendar';
 import Contact from './Contact';
+import PhotoGallery from './PhotoGallery';
 
 function App() {
   const imageUrl = 'https://i.pinimg.com/originals/0d/d5/58/0dd558b702946287f8e5e49686f81b0b.jpg';
@@ -12,10 +13,8 @@ function App() {
       <Navbar />
       <img src={imageUrl} alt="Main Wedding Image" className="w-full" />
       <About/>
-
-      <p1> insert photo gallery</p1>
-
-      <h1>Available Dates Calendar</h1>
+      <PhotoGallery/>
+      
       <MyCalendar availableDates={availableDates} />
 
       <Contact/>
