@@ -11,7 +11,7 @@ function App() {
   const availableDates = ['2024-03-30', '2024-03-31', '2024-04-10'];
 
   return (
-    <div className="bg-cream-tan min-h-screen">
+    <div className="bg-slate-700 min-h-screen">
       <Navbar />
       <img src={imageUrl} alt="Main Wedding Image" className="w-full" />
       <div id="about">

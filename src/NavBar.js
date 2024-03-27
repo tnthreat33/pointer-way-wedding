@@ -3,7 +3,7 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <nav className="bg-gray-800 py-4 fixed top-0 w-full z-10">
+    <nav className="bg-slate-700 py-4 fixed top-0 w-full z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         <div>
           <h1 className="text-white text-2xl font-bold">Pointers Way</h1>
