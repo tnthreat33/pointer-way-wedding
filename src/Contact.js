@@ -23,7 +23,7 @@ function Contact() {
   };
 
   return (
-    <div>
+    <div className="pt-8 text-white px-4">
       <div className="mb-5 mt-3">
         <h1 className="text-4xl mb-4">Contact Me</h1>
         <hr className="border-t-2 border-gray-400 my-4 ml-0" />
@@ -43,7 +43,7 @@ function Contact() {
           <form onSubmit={handleSubmit} className="w-full">
             <div className="mb-4">
               <input
-                className="w-full p-2 border border-gray-400 rounded"
+                className="w-full p-2 border border-gray-400 rounded text-black"
                 id="name"
                 name="name"
                 placeholder="Name"
@@ -55,7 +55,7 @@ function Contact() {
             </div>
             <div className="mb-4">
               <input
-                className="w-full p-2 border border-gray-400 rounded"
+                className="w-full p-2 border border-gray-400 rounded text-black"
                 id="email"
                 name="email"
                 placeholder="Email"
@@ -66,7 +66,7 @@ function Contact() {
               />
             </div>
             <textarea
-              className="w-full p-2 border border-gray-400 rounded mb-4"
+              className="w-full p-2 border border-gray-400 rounded mb-4 text-black"
               id="message"
               name="message"
               placeholder="Message"

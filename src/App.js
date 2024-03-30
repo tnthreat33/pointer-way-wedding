@@ -4,6 +4,7 @@ import About from './About';
 import MyCalendar from './Calendar';
 import Contact from './Contact';
 import PhotoGallery from './PhotoGallery';
+import BottomBar from './BottomBar';
 
 function App() {
   const imageUrl = 'https://i.pinimg.com/originals/0d/d5/58/0dd558b702946287f8e5e49686f81b0b.jpg';
@@ -30,7 +31,7 @@ function App() {
       <div id="contact">
         <Contact/>
       </div>
-      <p1> bottom bar with contact details and social links</p1>
+      <BottomBar />
     </div>
   );
 }
