@@ -11,7 +11,7 @@ const MyCalendar = ({ availableDates }) => {
   };
 
   return (
-    <div className="flex justify-center"> {/* Center the content horizontally */}
+    <div className="flex justify-center mt-10"> {/* Center the content horizontally */}
       <div className="bg-amber-600 rounded p-4 flex" style={{ marginLeft: "-50px" }}> {/* Flex container with margin-left */}
         <div className="flex-shrink-0 mr-4"> {/* Fixed width container */}
           <h1 className="text-lg font-bold mb-2">Available Dates Calendar</h1>
