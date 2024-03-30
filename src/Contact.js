@@ -4,7 +4,6 @@ function Contact() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    phone: '',
     message: ''
   });
 
@@ -18,33 +17,70 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { name, email, phone, message } = formData;
-    const mailtoLink = `mailto:tnthreat33@gmail.com?subject=Customer Inquiry&body=Name: ${name}%0DEmail: ${email}%0DPhone: ${phone}%0DMessage: ${message}`;
+    const { name, email, message } = formData;
+    const mailtoLink = `mailto:tnthreat33@gmail.com?subject=Customer Inquiry&body=Name: ${name}%0DEmail: ${email}%0DMessage: ${message}`;
     window.location.href = mailtoLink;
   };
 
   return (
     <div>
-      <h1>Contact Us</h1>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required />
+      <div className="mb-5 mt-3">
+        <h1 className="text-4xl mb-4">Contact Me</h1>
+        <hr className="border-t-2 border-gray-400 my-4 ml-0" />
+      </div>
+      <div className="flex">
+        <div className="w-5/12 mb-5">
+          <h3 className="text-lg py-4">Get in touch</h3>
+          <div>
+            <strong>Email:</strong>{" "}
+            <a href={`mailto:tnthreat33@gmail.com`}>
+              tnthreat33@gmail.com
+            </a>
+          </div>
+          <p className="mt-4">Feel free to drop us a message!</p>
         </div>
-        <div>
-          <label htmlFor="email">Email:</label>
-          <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required />
+        <div className="w-7/12 flex items-center">
+          <form onSubmit={handleSubmit} className="w-full">
+            <div className="mb-4">
+              <input
+                className="w-full p-2 border border-gray-400 rounded"
+                id="name"
+                name="name"
+                placeholder="Name"
+                type="text"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="mb-4">
+              <input
+                className="w-full p-2 border border-gray-400 rounded"
+                id="email"
+                name="email"
+                placeholder="Email"
+                type="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <textarea
+              className="w-full p-2 border border-gray-400 rounded mb-4"
+              id="message"
+              name="message"
+              placeholder="Message"
+              rows="5"
+              value={formData.message}
+              onChange={handleChange}
+              required
+            ></textarea>
+            <button className="bg-blue-500 text-white py-2 px-4 rounded" type="submit">
+              Send
+            </button>
+          </form>
         </div>
-        <div>
-          <label htmlFor="phone">Phone:</label>
-          <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleChange} required />
-        </div>
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea id="message" name="message" value={formData.message} onChange={handleChange} required />
-        </div>
-        <button type="submit">Submit</button>
-      </form>
+      </div>
     </div>
   );
 }
