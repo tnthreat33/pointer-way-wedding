@@ -5,8 +5,11 @@ module.exports = {
     extend: {
       colors: {
         olive: '#0d9488'
-      }
-    }
+      },
+      fontFamily: {
+        'cinzel': ['Cinzel', 'serif'],
+      },
+    },
   },
   plugins: [],
 };
