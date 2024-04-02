@@ -11,14 +11,14 @@ const MyCalendar = ({ availableDates }) => {
   };
 
   return (
-    <div className="flex justify-center mt-10"> {/* Center the content horizontally */}
-      <div className="bg-slate-200 rounded p-4 flex" style={{ marginLeft: "-50px" }}> {/* Flex container with margin-left */}
-        <div className="flex-shrink-0 mr-4"> {/* Fixed width container */}
+    <div className="flex justify-center mt-10"> 
+      <div className="bg-slate-200 rounded p-4 flex" style={{ marginLeft: "-50px" }}> 
+        <div className="flex-shrink-0 mr-4"> 
           <h1 className="text-lg font-bold mb-2">Available Dates Calendar</h1>
           <h4 className="text-sm mb-2">Find Your Perfect Date</h4>
           <p className="text-sm mb-4">If you don't see the date you want, reach out to us below to request other available dates.</p>
         </div>
-        <div className="flex-shrink-0"> {/* Fixed width container */}
+        <div className="flex-shrink-0"> 
           <Calendar
             onChange={setDate}
             value={date}

@@ -20,11 +20,11 @@ function PhotoGallery() {
   };
 
   return (
-    <div className="mt-8 px-4"> {/* Added padding to the sides */}
+    <div className="mt-8 px-4"> 
       <div className="grid grid-cols-5 gap-4">
         {/* Map through the photos array and render each photo */}
         {photos.slice(0, numRows * 5).map((photo, index) => (
-          <div key={index} className="aspect-w-1 aspect-h-1"> {/* Maintain aspect ratio */}
+          <div key={index} className="aspect-w-1 aspect-h-1"> 
             <img
               src={photo}
               alt={` ${index + 1}`}
