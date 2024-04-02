@@ -27,7 +27,7 @@ function PhotoGallery() {
           <div key={index} className="aspect-w-1 aspect-h-1"> {/* Maintain aspect ratio */}
             <img
               src={photo}
-              alt={`Photo ${index + 1}`}
+              alt={` ${index + 1}`}
               className="w-full h-full object-cover rounded-md" 
             />
           </div>
