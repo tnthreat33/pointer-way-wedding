@@ -6,6 +6,7 @@ const MyCalendar = ({ availableDates }) => {
 
   const tileClassName = ({ date }) => {
     // Check if the date is in the availableDates array
+    
     const formattedDate = date.toISOString().split('T')[0];
     return availableDates.includes(formattedDate) ? 'bg-green-300' : '';
   };
