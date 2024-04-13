@@ -7,7 +7,14 @@ function PhotoGallery() {
   // Array of photo URLs (Replace these with your actual photo URLs)
   const photos = [
     "/images/Screen Shot 2024-03-11 at 7.46.08 PM.png",
-    "/images/Screen Shot 2024-03-11 at 7.46.36 PM.png"
+    "/images/Screen Shot 2024-03-11 at 7.46.36 PM.png",
+    "/images/Screen Shot 2024-04-12 at 10.45.24 PM.png",
+    "/images/Screen Shot 2024-04-12 at 10.45.58 PM.png",
+    "/images/Screen Shot 2024-04-12 at 10.46.43 PM.png",
+    "/images/Screen Shot 2024-04-12 at 10.47.00 PM.png",
+    "/images/Screen Shot 2024-04-12 at 10.47.32 PM.png",
+    "/images/Screen Shot 2024-04-12 at 10.48.26 PM.png"
+
     // Add more photo URLs as needed
   ];
 
