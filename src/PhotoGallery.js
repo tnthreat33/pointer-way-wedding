@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 function PhotoGallery() {
-  // State to manage the number of rows to display
-  const [numRows, setNumRows] = useState(2);
+  // State to manage the number of photos to display
+  const [numPhotos, setNumPhotos] = useState(5);
 
   // Array of photo URLs (Replace these with your actual photo URLs)
   const photos = [
@@ -14,19 +14,18 @@ function PhotoGallery() {
     "/images/Screen Shot 2024-04-12 at 10.47.00 PM.png",
     "/images/Screen Shot 2024-04-12 at 10.47.32 PM.png",
     "/images/Screen Shot 2024-04-12 at 10.48.26 PM.png"
-
     // Add more photo URLs as needed
   ];
 
-  const showMoreRows = () => {
-    setNumRows(numRows + 2);
+  const showMorePhotos = () => {
+    setNumPhotos(numPhotos + 5); // Increment by 5 to show the next 5 photos
   };
 
   return (
     <div className="mt-8 px-4"> 
       <div className="grid grid-cols-5 gap-4">
         {/* Map through the photos array and render each photo */}
-        {photos.slice(0, numRows * 5).map((photo, index) => (
+        {photos.slice(0, numPhotos).map((photo, index) => (
           <div key={index} className="aspect-w-1 aspect-h-1"> 
             <img
               src={photo}
@@ -36,11 +35,12 @@ function PhotoGallery() {
           </div>
         ))}
       </div>
-      {numRows < Math.ceil(photos.length / 5 / 2) * 2 && (
+      {numPhotos < photos.length && (
         <button
-          onClick={showMoreRows}
-          className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
-        >
+        onClick={showMorePhotos}
+        className="mt-4 px-1 py-1 bg-white text-black rounded-md border  hover:bg-blue-500 hover:text-white"
+        style={{ fontSize: '0.75rem' }} // Adjust font size if needed
+      >
           Show More Photos
         </button>
       )}
