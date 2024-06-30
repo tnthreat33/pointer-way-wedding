@@ -14,7 +14,7 @@ function App() {
     <div className="bg-slate-700 min-h-screen relative">
       <Navbar />
       <div className="relative w-full overflow-hidden mb-8"> 
-      <img src="/images/main walkdown.png" alt="Main Wedding" className="w-full object-cover" style={{height: "650px"}} />
+      <img src="/images/main walkdown.png" alt="Main Wedding" className="w-full object-cover" style={{height: "600px"}} />
 
         <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-8xl font-cinzel"> 
           Pointers Way
